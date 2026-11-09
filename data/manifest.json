@@ -1,0 +1,16 @@
+{
+  "raw_rows": 187115,
+  "filtered_pre_vocabulary": 82654,
+  "train": 57853,
+  "val": 12397,
+  "test": 12399,
+  "features": 150,
+  "seed": 42,
+  "columns": {
+    "tags": "tags",
+    "reviews": "total_reviews",
+    "coming_soon": "coming_soon",
+    "id": "appid"
+  },
+  "notes": "Vocabulario ajustado exclusivamente sobre entrenamiento. Auditar cómo vienen los tags en el CSV real."
+}

@@ -1,0 +1,148 @@
+{
+  "sensitivity": [
+    {
+      "k": 8,
+      "train_subset_rows": 15000,
+      "validation": {
+        "silueta": -0.00091,
+        "davies_bouldin": 3.51229,
+        "calinski_harabasz": 32.088
+      },
+      "seconds": 0.67
+    },
+    {
+      "k": 10,
+      "train_subset_rows": 15000,
+      "validation": {
+        "silueta": 0.00805,
+        "davies_bouldin": 3.44591,
+        "calinski_harabasz": 29.029
+      },
+      "seconds": 0.8
+    },
+    {
+      "k": 12,
+      "train_subset_rows": 15000,
+      "validation": {
+        "silueta": 0.00952,
+        "davies_bouldin": 3.40764,
+        "calinski_harabasz": 26.436
+      },
+      "seconds": 1.0
+    },
+    {
+      "k": 15,
+      "train_subset_rows": 15000,
+      "validation": {
+        "silueta": 0.01503,
+        "davies_bouldin": 3.31544,
+        "calinski_harabasz": 23.304
+      },
+      "seconds": 1.27
+    },
+    {
+      "k": 20,
+      "train_subset_rows": 15000,
+      "validation": {
+        "silueta": 0.01985,
+        "davies_bouldin": 3.36598,
+        "calinski_harabasz": 19.485
+      },
+      "seconds": 1.52
+    }
+  ],
+  "stability_pairs": [
+    {
+      "seeds": [
+        42,
+        43
+      ],
+      "ari_on_validation": 0.8487
+    },
+    {
+      "seeds": [
+        42,
+        44
+      ],
+      "ari_on_validation": 0.7721
+    },
+    {
+      "seeds": [
+        43,
+        44
+      ],
+      "ari_on_validation": 0.7661
+    }
+  ],
+  "shap": {
+    "status": "ejecutado",
+    "sample_test_row": 0,
+    "sample_test_appid": "1174900",
+    "surrogate_predicted_cluster": 9,
+    "kmeans_cluster": 9,
+    "top_features": [
+      {
+        "tag": "Singleplayer",
+        "shap_value": 0.1295271,
+        "tag_present": false
+      },
+      {
+        "tag": "Sexual Content",
+        "shap_value": -0.0572047,
+        "tag_present": true
+      },
+      {
+        "tag": "2D",
+        "shap_value": 0.0529305,
+        "tag_present": false
+      },
+      {
+        "tag": "Anime",
+        "shap_value": 0.0461515,
+        "tag_present": false
+      },
+      {
+        "tag": "Nudity",
+        "shap_value": -0.04498,
+        "tag_present": true
+      },
+      {
+        "tag": "3D",
+        "shap_value": 0.0308177,
+        "tag_present": false
+      },
+      {
+        "tag": "Hentai",
+        "shap_value": 0.0289782,
+        "tag_present": false
+      },
+      {
+        "tag": "Visual Novel",
+        "shap_value": 0.0157183,
+        "tag_present": false
+      },
+      {
+        "tag": "First-Person",
+        "shap_value": 0.015429,
+        "tag_present": false
+      },
+      {
+        "tag": "Story Rich",
+        "shap_value": 0.0133544,
+        "tag_present": false
+      },
+      {
+        "tag": "Relaxing",
+        "shap_value": 0.012995,
+        "tag_present": false
+      },
+      {
+        "tag": "Cute",
+        "shap_value": 0.0091017,
+        "tag_present": false
+      }
+    ],
+    "caution": "SHAP explica un RandomForest entrenado con pseudoetiquetas de K-Means; no demuestra causalidad ni verdad de clusters."
+  },
+  "note": "Sensibilidad/estabilidad realizadas en una muestra aleatoria de 15.000 juegos de entrenamiento; informe completo debe indicar este límite."
+}

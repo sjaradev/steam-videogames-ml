@@ -1,0 +1,554 @@
+[
+  {
+    "id": 0,
+    "name_provisional": "Strategy / Singleplayer / 2D",
+    "n_games": 6316,
+    "percentage": 7.64,
+    "tags": [
+      {
+        "tag": "Strategy",
+        "frequency_in_cluster": 0.819
+      },
+      {
+        "tag": "Singleplayer",
+        "frequency_in_cluster": 0.764
+      },
+      {
+        "tag": "2D",
+        "frequency_in_cluster": 0.592
+      },
+      {
+        "tag": "RPG",
+        "frequency_in_cluster": 0.554
+      },
+      {
+        "tag": "Turn-Based Strategy",
+        "frequency_in_cluster": 0.477
+      },
+      {
+        "tag": "Fantasy",
+        "frequency_in_cluster": 0.444
+      },
+      {
+        "tag": "Turn-Based Combat",
+        "frequency_in_cluster": 0.432
+      },
+      {
+        "tag": "Indie",
+        "frequency_in_cluster": 0.43
+      }
+    ],
+    "percent_free": 20.1,
+    "price_median_USD": 9.99,
+    "reviews_median": 71.0,
+    "positive_percentage_median": 82.4,
+    "year_median": 2023,
+    "adult_content_share": 2.8
+  },
+  {
+    "id": 1,
+    "name_provisional": "Casual / Singleplayer / Puzzle",
+    "n_games": 8058,
+    "percentage": 9.75,
+    "tags": [
+      {
+        "tag": "Casual",
+        "frequency_in_cluster": 0.93
+      },
+      {
+        "tag": "Singleplayer",
+        "frequency_in_cluster": 0.881
+      },
+      {
+        "tag": "Puzzle",
+        "frequency_in_cluster": 0.696
+      },
+      {
+        "tag": "2D",
+        "frequency_in_cluster": 0.678
+      },
+      {
+        "tag": "Indie",
+        "frequency_in_cluster": 0.677
+      },
+      {
+        "tag": "Relaxing",
+        "frequency_in_cluster": 0.595
+      },
+      {
+        "tag": "Cute",
+        "frequency_in_cluster": 0.505
+      },
+      {
+        "tag": "Colorful",
+        "frequency_in_cluster": 0.487
+      }
+    ],
+    "percent_free": 18.7,
+    "price_median_USD": 4.99,
+    "reviews_median": 38.0,
+    "positive_percentage_median": 88.8,
+    "year_median": 2023,
+    "adult_content_share": 2.4
+  },
+  {
+    "id": 2,
+    "name_provisional": "Action / Shooter / First-Person",
+    "n_games": 4864,
+    "percentage": 5.89,
+    "tags": [
+      {
+        "tag": "Action",
+        "frequency_in_cluster": 0.967
+      },
+      {
+        "tag": "Shooter",
+        "frequency_in_cluster": 0.82
+      },
+      {
+        "tag": "First-Person",
+        "frequency_in_cluster": 0.741
+      },
+      {
+        "tag": "FPS",
+        "frequency_in_cluster": 0.74
+      },
+      {
+        "tag": "Singleplayer",
+        "frequency_in_cluster": 0.666
+      },
+      {
+        "tag": "3D",
+        "frequency_in_cluster": 0.476
+      },
+      {
+        "tag": "Indie",
+        "frequency_in_cluster": 0.407
+      },
+      {
+        "tag": "Multiplayer",
+        "frequency_in_cluster": 0.399
+      }
+    ],
+    "percent_free": 25.9,
+    "price_median_USD": 9.99,
+    "reviews_median": 86.0,
+    "positive_percentage_median": 76.5,
+    "year_median": 2022,
+    "adult_content_share": 5.1
+  },
+  {
+    "id": 3,
+    "name_provisional": "Action / Singleplayer / 2D",
+    "n_games": 4882,
+    "percentage": 5.91,
+    "tags": [
+      {
+        "tag": "Action",
+        "frequency_in_cluster": 0.94
+      },
+      {
+        "tag": "Singleplayer",
+        "frequency_in_cluster": 0.733
+      },
+      {
+        "tag": "2D",
+        "frequency_in_cluster": 0.725
+      },
+      {
+        "tag": "Arcade",
+        "frequency_in_cluster": 0.577
+      },
+      {
+        "tag": "Indie",
+        "frequency_in_cluster": 0.556
+      },
+      {
+        "tag": "Pixel Graphics",
+        "frequency_in_cluster": 0.514
+      },
+      {
+        "tag": "Bullet Hell",
+        "frequency_in_cluster": 0.493
+      },
+      {
+        "tag": "Top-Down",
+        "frequency_in_cluster": 0.443
+      }
+    ],
+    "percent_free": 16.2,
+    "price_median_USD": 5.99,
+    "reviews_median": 40.0,
+    "positive_percentage_median": 87.9,
+    "year_median": 2023,
+    "adult_content_share": 2.4
+  },
+  {
+    "id": 4,
+    "name_provisional": "Action / Adventure / Singleplayer",
+    "n_games": 5585,
+    "percentage": 6.76,
+    "tags": [
+      {
+        "tag": "Action",
+        "frequency_in_cluster": 0.809
+      },
+      {
+        "tag": "Adventure",
+        "frequency_in_cluster": 0.789
+      },
+      {
+        "tag": "Singleplayer",
+        "frequency_in_cluster": 0.691
+      },
+      {
+        "tag": "RPG",
+        "frequency_in_cluster": 0.673
+      },
+      {
+        "tag": "Action-Adventure",
+        "frequency_in_cluster": 0.493
+      },
+      {
+        "tag": "Action RPG",
+        "frequency_in_cluster": 0.476
+      },
+      {
+        "tag": "3D",
+        "frequency_in_cluster": 0.466
+      },
+      {
+        "tag": "Fantasy",
+        "frequency_in_cluster": 0.464
+      }
+    ],
+    "percent_free": 22.8,
+    "price_median_USD": 13.99,
+    "reviews_median": 88.0,
+    "positive_percentage_median": 77.8,
+    "year_median": 2023,
+    "adult_content_share": 7.8
+  },
+  {
+    "id": 5,
+    "name_provisional": "2D / Action / Platformer",
+    "n_games": 5638,
+    "percentage": 6.82,
+    "tags": [
+      {
+        "tag": "2D",
+        "frequency_in_cluster": 0.888
+      },
+      {
+        "tag": "Action",
+        "frequency_in_cluster": 0.808
+      },
+      {
+        "tag": "Platformer",
+        "frequency_in_cluster": 0.805
+      },
+      {
+        "tag": "Singleplayer",
+        "frequency_in_cluster": 0.776
+      },
+      {
+        "tag": "Adventure",
+        "frequency_in_cluster": 0.678
+      },
+      {
+        "tag": "Indie",
+        "frequency_in_cluster": 0.673
+      },
+      {
+        "tag": "2D Platformer",
+        "frequency_in_cluster": 0.648
+      },
+      {
+        "tag": "Pixel Graphics",
+        "frequency_in_cluster": 0.59
+      }
+    ],
+    "percent_free": 17.7,
+    "price_median_USD": 6.99,
+    "reviews_median": 42.0,
+    "positive_percentage_median": 87.5,
+    "year_median": 2022,
+    "adult_content_share": 2.8
+  },
+  {
+    "id": 6,
+    "name_provisional": "Sexual Content / Nudity / Singleplayer",
+    "n_games": 6447,
+    "percentage": 7.8,
+    "tags": [
+      {
+        "tag": "Sexual Content",
+        "frequency_in_cluster": 0.979
+      },
+      {
+        "tag": "Nudity",
+        "frequency_in_cluster": 0.931
+      },
+      {
+        "tag": "Singleplayer",
+        "frequency_in_cluster": 0.837
+      },
+      {
+        "tag": "Anime",
+        "frequency_in_cluster": 0.737
+      },
+      {
+        "tag": "Casual",
+        "frequency_in_cluster": 0.713
+      },
+      {
+        "tag": "Hentai",
+        "frequency_in_cluster": 0.666
+      },
+      {
+        "tag": "Indie",
+        "frequency_in_cluster": 0.573
+      },
+      {
+        "tag": "Visual Novel",
+        "frequency_in_cluster": 0.549
+      }
+    ],
+    "percent_free": 6.0,
+    "price_median_USD": 6.99,
+    "reviews_median": 69.0,
+    "positive_percentage_median": 80.0,
+    "year_median": 2023,
+    "adult_content_share": 99.5
+  },
+  {
+    "id": 7,
+    "name_provisional": "Adventure / Horror / Singleplayer",
+    "n_games": 6998,
+    "percentage": 8.47,
+    "tags": [
+      {
+        "tag": "Adventure",
+        "frequency_in_cluster": 0.815
+      },
+      {
+        "tag": "Horror",
+        "frequency_in_cluster": 0.784
+      },
+      {
+        "tag": "Singleplayer",
+        "frequency_in_cluster": 0.781
+      },
+      {
+        "tag": "First-Person",
+        "frequency_in_cluster": 0.755
+      },
+      {
+        "tag": "Atmospheric",
+        "frequency_in_cluster": 0.709
+      },
+      {
+        "tag": "Exploration",
+        "frequency_in_cluster": 0.622
+      },
+      {
+        "tag": "Psychological Horror",
+        "frequency_in_cluster": 0.618
+      },
+      {
+        "tag": "Indie",
+        "frequency_in_cluster": 0.594
+      }
+    ],
+    "percent_free": 17.4,
+    "price_median_USD": 5.99,
+    "reviews_median": 56.0,
+    "positive_percentage_median": 80.8,
+    "year_median": 2024,
+    "adult_content_share": 4.1
+  },
+  {
+    "id": 8,
+    "name_provisional": "Simulation / Singleplayer / Casual",
+    "n_games": 6583,
+    "percentage": 7.97,
+    "tags": [
+      {
+        "tag": "Simulation",
+        "frequency_in_cluster": 0.923
+      },
+      {
+        "tag": "Singleplayer",
+        "frequency_in_cluster": 0.796
+      },
+      {
+        "tag": "Casual",
+        "frequency_in_cluster": 0.558
+      },
+      {
+        "tag": "Management",
+        "frequency_in_cluster": 0.554
+      },
+      {
+        "tag": "Strategy",
+        "frequency_in_cluster": 0.497
+      },
+      {
+        "tag": "Indie",
+        "frequency_in_cluster": 0.462
+      },
+      {
+        "tag": "Building",
+        "frequency_in_cluster": 0.413
+      },
+      {
+        "tag": "3D",
+        "frequency_in_cluster": 0.412
+      }
+    ],
+    "percent_free": 15.5,
+    "price_median_USD": 9.99,
+    "reviews_median": 89.0,
+    "positive_percentage_median": 78.0,
+    "year_median": 2024,
+    "adult_content_share": 2.3
+  },
+  {
+    "id": 9,
+    "name_provisional": "Indie / Casual / Action",
+    "n_games": 14866,
+    "percentage": 17.99,
+    "tags": [
+      {
+        "tag": "Indie",
+        "frequency_in_cluster": 0.753
+      },
+      {
+        "tag": "Casual",
+        "frequency_in_cluster": 0.448
+      },
+      {
+        "tag": "Action",
+        "frequency_in_cluster": 0.403
+      },
+      {
+        "tag": "Adventure",
+        "frequency_in_cluster": 0.383
+      },
+      {
+        "tag": "Simulation",
+        "frequency_in_cluster": 0.228
+      },
+      {
+        "tag": "Strategy",
+        "frequency_in_cluster": 0.206
+      },
+      {
+        "tag": "Free to Play",
+        "frequency_in_cluster": 0.156
+      },
+      {
+        "tag": "RPG",
+        "frequency_in_cluster": 0.152
+      }
+    ],
+    "percent_free": 21.2,
+    "price_median_USD": 4.99,
+    "reviews_median": 43.0,
+    "positive_percentage_median": 73.3,
+    "year_median": 2018,
+    "adult_content_share": 4.3
+  },
+  {
+    "id": 10,
+    "name_provisional": "Singleplayer / 3D / Casual",
+    "n_games": 6073,
+    "percentage": 7.35,
+    "tags": [
+      {
+        "tag": "Singleplayer",
+        "frequency_in_cluster": 0.668
+      },
+      {
+        "tag": "3D",
+        "frequency_in_cluster": 0.659
+      },
+      {
+        "tag": "Casual",
+        "frequency_in_cluster": 0.653
+      },
+      {
+        "tag": "Action",
+        "frequency_in_cluster": 0.62
+      },
+      {
+        "tag": "Multiplayer",
+        "frequency_in_cluster": 0.538
+      },
+      {
+        "tag": "Indie",
+        "frequency_in_cluster": 0.486
+      },
+      {
+        "tag": "Arcade",
+        "frequency_in_cluster": 0.438
+      },
+      {
+        "tag": "Funny",
+        "frequency_in_cluster": 0.407
+      }
+    ],
+    "percent_free": 27.8,
+    "price_median_USD": 7.99,
+    "reviews_median": 46.0,
+    "positive_percentage_median": 83.0,
+    "year_median": 2023,
+    "adult_content_share": 2.3
+  },
+  {
+    "id": 11,
+    "name_provisional": "Story Rich / Singleplayer / Visual Novel",
+    "n_games": 6339,
+    "percentage": 7.67,
+    "tags": [
+      {
+        "tag": "Story Rich",
+        "frequency_in_cluster": 0.806
+      },
+      {
+        "tag": "Singleplayer",
+        "frequency_in_cluster": 0.768
+      },
+      {
+        "tag": "Visual Novel",
+        "frequency_in_cluster": 0.706
+      },
+      {
+        "tag": "Adventure",
+        "frequency_in_cluster": 0.689
+      },
+      {
+        "tag": "2D",
+        "frequency_in_cluster": 0.621
+      },
+      {
+        "tag": "Multiple Endings",
+        "frequency_in_cluster": 0.504
+      },
+      {
+        "tag": "Indie",
+        "frequency_in_cluster": 0.502
+      },
+      {
+        "tag": "Casual",
+        "frequency_in_cluster": 0.469
+      }
+    ],
+    "percent_free": 20.5,
+    "price_median_USD": 9.99,
+    "reviews_median": 71.0,
+    "positive_percentage_median": 89.8,
+    "year_median": 2023,
+    "adult_content_share": 11.3
+  }
+]
