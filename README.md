@@ -1,10 +1,10 @@
 # ACIF104 · Semana 6 · Grupo 11
 
-**Mapa de tipologías de videojuegos de Steam**. Prototipo académico reproducible, probado localmente el 8 de noviembre de 2026. Este repositorio **no** constituye por sí solo evidencia de cumplimiento integral de la rúbrica: faltan validación humana, pruebas de usabilidad y carga, despliegue seguro, monitoreo de deriva y publicación en una cuenta de GitHub del grupo.
+**Mapa de tipologías de videojuegos de Steam**. Proyecto del Grupo 11 para ACIF104 (UNAB). Agrupamos los juegos de Steam según sus tags para descubrir tipologías más específicas que los géneros oficiales, y las mostramos en una aplicación web.
 
 ## Datos originales y reproducibilidad
 
-El CSV original **no viene incluido** en este ZIP. El grupo debe colocar su copia de `app_dataset_20260907_20260918(1).csv` en `data/steam_original.csv`. El SHA-256 utilizado para la ejecución del informe es:
+El CSV original está en la raíz del repositorio: `app_dataset_20260907_20260918.csv`. El SHA-256 utilizado para la ejecución del informe es:
 
 `45930a2ab0eefd8349ae2932ea56bcf0443da65ee632640d7fb467decfefb18d` *(completo; debe coincidir con el archivo de entrada)*.
 
@@ -38,20 +38,35 @@ Las dependencias principales son pandas, numpy, scikit-learn, PyTorch, imbalance
 
 ## Reproducir resultados desde cero
 
-Copiar el CSV original a `data/steam_original.csv` y ejecutar desde la raíz del proyecto:
+Ejecutar desde la raíz del proyecto:
 
 ```bash
-python -m src.prepare --csv data/steam_original.csv --tags-column tags --reviews-column total_reviews --coming-soon-column coming_soon --id-column appid --n-tags 150 --min-reviews 10
-python -m src.eda --csv data/steam_original.csv
+python -m src.prepare --csv app_dataset_20260907_20260918.csv --tags-column tags --reviews-column total_reviews --coming-soon-column coming_soon --id-column appid --n-tags 150 --min-reviews 10
+python -m src.eda --csv app_dataset_20260907_20260918.csv
 python -m src.experiment --k 12 --epochs 20 --max-train-dl 10000 --seed 42
 python -m src.evaluate_extra
 python -m src.refine
-python -m src.build_catalog --csv data/steam_original.csv
+python -m src.build_catalog --csv app_dataset_20260907_20260918.csv
+python src/validez_tipologias.py --csv app_dataset_20260907_20260918.csv --out results/validez
+python src/figuras_validez.py --res results/validez --out results/figures
 ```
 
-La salida se guarda en `data/`, `artifacts/` y `results/`. Los archivos `results/metrics.json`, `results/eda.json`, `results/refinement.json`, `results/extra.json`, `results/cluster_profiles.json` y sus figuras fueron generados con datos reales. Los artefactos del ZIP permiten además probar la API sin reentrenar.
+La salida se guarda en `data/`, `artifacts/` y `results/`. Los archivos `results/metrics.json`, `results/eda.json`, `results/refinement.json`, `results/extra.json`, `results/cluster_profiles.json` y sus figuras fueron generados con datos reales. Los artefactos del repositorio permiten además probar la API sin reentrenar.
 
 **Detalles a tener presente:** el vocabulario se calcula solo en train; el jerárquico Ward se entrena con 1.800 juegos y se evalúa en observaciones nuevas mediante **aproximación al centroide**, pues el algoritmo no implementa `predict`. Las tres arquitecturas neuronales se entrenaron con **10.000** juegos durante 20 épocas, frente a 57.853 en los modelos clásicos; la comparación es exploratoria, no una igualdad estricta de presupuestos. Silueta, Davies-Bouldin y Calinski-Harabasz se comparan en la misma submuestra de 1.200 juegos del conjunto de prueba y en el espacio original de 150 tags. Las métricas de clasificación del modelo Random Forest sustituto **no miden exactitud de las tipologías**, sino concordancia con pseudoetiquetas K-Means. SHAP explica ese sustituto, no causalidad ni la función de decisión interna de K-Means.
+
+## Validez de los grupos
+
+`src/validez_tipologias.py` compara las tipologías contra una referencia nula y mide su coherencia con el índice de Jaccard en el conjunto de prueba. También prueba TF-IDF con distancia coseno y LDA. Tarda unos 4 minutos y deja sus resultados en `results/validez/`.
+
+| Agrupación | Jaccard dentro del grupo |
+|---|---|
+| Pares al azar | 0,109 |
+| Géneros de Steam | 0,144 |
+| Referencia nula (K-Means sobre tags permutados) | 0,148 |
+| K-Means binario (euclidiana) | 0,210 |
+| K-Means TF-IDF (coseno) | 0,206 |
+| LDA (tópico dominante) | 0,199 |
 
 ## Aplicación web
 
@@ -87,16 +102,11 @@ src/experiment.py         ML clásico, autoencoders y balanceo del sustituto
 src/evaluate_extra.py     Sensibilidad, estabilidad y SHAP
 src/refine.py             Ensayo adicional k=12 frente a k=15
 src/build_catalog.py      Perfiles y catálogo de consulta
+src/validez_tipologias.py Referencia nula, Jaccard por tipología, TF-IDF + coseno y LDA
+src/figuras_validez.py    Figuras de la validez de los grupos
 tests/test_api.py         Pruebas locales de API
 data/                     CSV indexado y matrices procesadas (original no incluido)
 artifacts/                Modelos y pesos entrenados
 results/                  Métricas, figuras y perfiles
 ```
 
-## Pendientes prioritarios antes de la entrega
-
-1. Publicar el código en un GitHub accesible al docente y añadir la URL al informe.
-2. Revisar contenido, autoría y conclusiones con todos los integrantes.
-3. Validar al menos algunos nombres de clusters con usuarios; documentar capturas de la UI si corresponde.
-4. Implementar/comprobar los restantes requisitos de seguridad, usabilidad, escalabilidad y monitoreo.
-5. Ajustar el documento al formato institucional descargable de la asignatura si difiere de la maqueta preparada.
