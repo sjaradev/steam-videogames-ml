@@ -1,0 +1,28 @@
+{
+  "k12": {
+    "validation": {
+      "silueta": 0.00977,
+      "davies_bouldin": 3.29633,
+      "calinski_harabasz": 26.368
+    },
+    "test": {
+      "silueta": 0.00314,
+      "davies_bouldin": 3.35495,
+      "calinski_harabasz": 26.251
+    }
+  },
+  "k15": {
+    "time_seconds": 8.2,
+    "validation": {
+      "silueta": 0.01438,
+      "davies_bouldin": 3.30331,
+      "calinski_harabasz": 23.319
+    },
+    "test": {
+      "silueta": 0.00813,
+      "davies_bouldin": 3.3146,
+      "calinski_harabasz": 22.923
+    }
+  },
+  "warning": "k15 es experimento de refinamiento; el equipo debe valorar interpretación de los 15 grupos antes de sustituir el modelo de k12."
+}

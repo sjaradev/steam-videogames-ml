@@ -1,0 +1,266 @@
+{
+  "rows": 187115,
+  "columns": 15,
+  "names": [
+    "appid",
+    "name",
+    "genres",
+    "positive_reviews",
+    "total_reviews",
+    "tags",
+    "coming_soon",
+    "release_date",
+    "release_date_raw",
+    "is_free",
+    "currency",
+    "initial_price",
+    "final_price",
+    "discount_percent",
+    "fetched_at"
+  ],
+  "duplicate_appid": 0,
+  "launched": 129663,
+  "coming_soon": 57452,
+  "reviews_ge_10": 82659,
+  "nonempty_tags_after_review_filter": 82654,
+  "model_rows_after_training_vocabulary": 82649,
+  "n_unique_tags_filtered": 430,
+  "n_unique_genres": 33,
+  "missing_raw": {
+    "appid": 0,
+    "name": 23,
+    "genres": 181,
+    "positive_reviews": 57453,
+    "total_reviews": 57453,
+    "tags": 57453,
+    "coming_soon": 0,
+    "release_date": 53935,
+    "release_date_raw": 283,
+    "is_free": 0,
+    "currency": 76427,
+    "initial_price": 76427,
+    "final_price": 76427,
+    "discount_percent": 76427,
+    "fetched_at": 0
+  },
+  "missing_launched": {
+    "appid": 0,
+    "name": 2,
+    "genres": 139,
+    "positive_reviews": 1,
+    "total_reviews": 1,
+    "tags": 1,
+    "coming_soon": 0,
+    "release_date": 59,
+    "release_date_raw": 59,
+    "is_free": 0,
+    "currency": 19015,
+    "initial_price": 19015,
+    "final_price": 19015,
+    "discount_percent": 19015,
+    "fetched_at": 0
+  },
+  "invalid_date_outside_1980_2026": 394,
+  "unparseable_nonblank_dates": 0,
+  "negative_or_contradictory_reviews_launched": 0,
+  "review_quantiles": {
+    "0.0": 0.0,
+    "0.25": 5.0,
+    "0.5": 19.0,
+    "0.75": 92.0,
+    "0.9": 548.0,
+    "0.95": 1768.0,
+    "0.99": 18156.679999999993,
+    "1.0": 9842297.0
+  },
+  "price_usd_quantiles": {
+    "0.0": 0.5,
+    "0.25": 2.99,
+    "0.5": 5.99,
+    "0.75": 9.99,
+    "0.9": 19.99,
+    "0.95": 24.99,
+    "0.99": 49.99,
+    "1.0": 1900.0
+  },
+  "top_tags": [
+    [
+      "Singleplayer",
+      54201
+    ],
+    [
+      "Indie",
+      46903
+    ],
+    [
+      "Casual",
+      37688
+    ],
+    [
+      "Adventure",
+      36017
+    ],
+    [
+      "Action",
+      33843
+    ],
+    [
+      "2D",
+      29044
+    ],
+    [
+      "Simulation",
+      20813
+    ],
+    [
+      "3D",
+      19932
+    ],
+    [
+      "Atmospheric",
+      18680
+    ],
+    [
+      "Strategy",
+      17753
+    ],
+    [
+      "RPG",
+      17391
+    ],
+    [
+      "Puzzle",
+      16980
+    ],
+    [
+      "Story Rich",
+      16957
+    ],
+    [
+      "Cute",
+      16148
+    ],
+    [
+      "Colorful",
+      15604
+    ],
+    [
+      "Exploration",
+      15143
+    ],
+    [
+      "Pixel Graphics",
+      14083
+    ],
+    [
+      "First-Person",
+      13822
+    ],
+    [
+      "Fantasy",
+      12742
+    ],
+    [
+      "Anime",
+      12248
+    ]
+  ],
+  "tags_count_per_game_mean": 15.542,
+  "columns_dictionary": [
+    {
+      "name": "appid",
+      "type": "int64",
+      "missing": 0,
+      "unique": 187115
+    },
+    {
+      "name": "name",
+      "type": "str",
+      "missing": 23,
+      "unique": 184777
+    },
+    {
+      "name": "genres",
+      "type": "str",
+      "missing": 181,
+      "unique": 2760
+    },
+    {
+      "name": "positive_reviews",
+      "type": "float64",
+      "missing": 57453,
+      "unique": 6242
+    },
+    {
+      "name": "total_reviews",
+      "type": "float64",
+      "missing": 57453,
+      "unique": 6730
+    },
+    {
+      "name": "tags",
+      "type": "str",
+      "missing": 57453,
+      "unique": 123071
+    },
+    {
+      "name": "coming_soon",
+      "type": "bool",
+      "missing": 0,
+      "unique": 2
+    },
+    {
+      "name": "release_date",
+      "type": "str",
+      "missing": 53935,
+      "unique": 5601
+    },
+    {
+      "name": "release_date_raw",
+      "type": "str",
+      "missing": 283,
+      "unique": 5836
+    },
+    {
+      "name": "is_free",
+      "type": "bool",
+      "missing": 0,
+      "unique": 2
+    },
+    {
+      "name": "currency",
+      "type": "str",
+      "missing": 76427,
+      "unique": 6
+    },
+    {
+      "name": "initial_price",
+      "type": "float64",
+      "missing": 76427,
+      "unique": 585
+    },
+    {
+      "name": "final_price",
+      "type": "float64",
+      "missing": 76427,
+      "unique": 837
+    },
+    {
+      "name": "discount_percent",
+      "type": "float64",
+      "missing": 76427,
+      "unique": 86
+    },
+    {
+      "name": "fetched_at",
+      "type": "str",
+      "missing": 0,
+      "unique": 12
+    }
+  ],
+  "snapshot_range": [
+    "2026-09-07",
+    "2026-09-18"
+  ],
+  "model_report_note": "Estadísticas recalculadas directamente desde CSV. La elección del vocabulario de 150 tags se hizo con train y semilla 42; filtrado final igual a fase 1."
+}

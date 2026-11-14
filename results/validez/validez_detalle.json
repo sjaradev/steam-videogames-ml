@@ -1,0 +1,423 @@
+{
+  "info": {
+    "juegos_filtrados": 82654,
+    "train": 57853,
+    "val": 12398,
+    "test": 12399,
+    "tags": 150,
+    "k": 12,
+    "jaccard_pares_al_azar": 0.10884366184473038,
+    "jaccard_por_genero": {
+      "Indie": 0.12285749614238739,
+      "Casual": 0.14481884241104126,
+      "Adventure": 0.14155660569667816,
+      "Action": 0.13743993639945984,
+      "Simulation": 0.14202933013439178,
+      "Strategy": 0.13871772587299347,
+      "RPG": 0.14701898396015167,
+      "Free To Play": 0.13012102246284485
+    },
+    "lda": {
+      "peso_medio_topico_dominante": 0.6043598055839539,
+      "pct_juegos_con_segundo_topico_mayor_0.2": 64.40842003387371,
+      "pct_juegos_topico_dominante_menor_0.5": 33.46237599806436
+    },
+    "casos_pocos_tags": [
+      {
+        "tags": [
+          "Horror",
+          "First-Person",
+          "Atmospheric"
+        ],
+        "binario": [
+          "Indie",
+          "Casual",
+          "Action"
+        ],
+        "tfidf": [
+          "Horror",
+          "Psychological Horror",
+          "First-Person"
+        ]
+      },
+      {
+        "tags": [
+          "Visual Novel",
+          "Story Rich"
+        ],
+        "binario": [
+          "Indie",
+          "Casual",
+          "Action"
+        ],
+        "tfidf": [
+          "Visual Novel",
+          "Story Rich",
+          "Interactive Fiction"
+        ]
+      },
+      {
+        "tags": [
+          "Strategy",
+          "Turn-Based Strategy",
+          "Fantasy"
+        ],
+        "binario": [
+          "Strategy",
+          "Singleplayer",
+          "2D"
+        ],
+        "tfidf": [
+          "Strategy",
+          "Turn-Based Strategy",
+          "Turn-Based Combat"
+        ]
+      },
+      {
+        "tags": [
+          "Shooter",
+          "FPS",
+          "Multiplayer"
+        ],
+        "binario": [
+          "Indie",
+          "Casual",
+          "Action"
+        ],
+        "tfidf": [
+          "Action",
+          "Shooter",
+          "FPS"
+        ]
+      }
+    ],
+    "ari_5_semillas": {
+      "kmeans_binario": [
+        0.8865146186960912,
+        0.7568485626601983
+      ],
+      "kmeans_tfidf": [
+        0.8260886988302498,
+        0.7166327220543145
+      ]
+    },
+    "ari_binario_vs_tfidf": 0.5135843357784412,
+    "silueta_euclidiana_binario": 0.0036146086640655994,
+    "silueta_coseno_tfidf": 0.09762941300868988,
+    "silueta_euclidiana_nula_permutada": 0.015222792513668537
+  },
+  "por_grupo": {
+    "kmeans_binario": {
+      "jaccard": {
+        "0": 0.17696194350719452,
+        "1": 0.23445568978786469,
+        "2": 0.2166607826948166,
+        "3": 0.2165365070104599,
+        "4": 0.18981634080410004,
+        "5": 0.25622254610061646,
+        "6": 0.2864311933517456,
+        "7": 0.2580520212650299,
+        "8": 0.19160914421081543,
+        "9": 0.15823300182819366,
+        "10": 0.17759305238723755,
+        "11": 0.21298745274543762
+      },
+      "n": {
+        "0": 971,
+        "1": 1248,
+        "2": 799,
+        "3": 705,
+        "4": 848,
+        "5": 821,
+        "6": 988,
+        "7": 1080,
+        "8": 983,
+        "9": 2121,
+        "10": 868,
+        "11": 967
+      },
+      "tags": {
+        "0": [
+          "Strategy",
+          "Singleplayer",
+          "2D",
+          "RPG"
+        ],
+        "1": [
+          "Casual",
+          "Singleplayer",
+          "Puzzle",
+          "2D"
+        ],
+        "2": [
+          "Action",
+          "Shooter",
+          "First-Person",
+          "FPS"
+        ],
+        "3": [
+          "Action",
+          "Singleplayer",
+          "2D",
+          "Arcade"
+        ],
+        "4": [
+          "Action",
+          "Adventure",
+          "Singleplayer",
+          "RPG"
+        ],
+        "5": [
+          "2D",
+          "Action",
+          "Platformer",
+          "Singleplayer"
+        ],
+        "6": [
+          "Sexual Content",
+          "Nudity",
+          "Singleplayer",
+          "Anime"
+        ],
+        "7": [
+          "Adventure",
+          "Horror",
+          "Singleplayer",
+          "First-Person"
+        ],
+        "8": [
+          "Simulation",
+          "Singleplayer",
+          "Casual",
+          "Management"
+        ],
+        "9": [
+          "Indie",
+          "Casual",
+          "Action",
+          "Adventure"
+        ],
+        "10": [
+          "Singleplayer",
+          "3D",
+          "Casual",
+          "Action"
+        ],
+        "11": [
+          "Story Rich",
+          "Singleplayer",
+          "Visual Novel",
+          "Adventure"
+        ]
+      }
+    },
+    "kmeans_tfidf": {
+      "jaccard": {
+        "0": 0.15684612095355988,
+        "1": 0.20206394791603088,
+        "2": 0.28043225407600403,
+        "3": 0.16602109372615814,
+        "4": 0.20979347825050354,
+        "5": 0.2488376647233963,
+        "6": 0.19293835759162903,
+        "7": 0.22491760551929474,
+        "8": 0.1598544418811798,
+        "9": 0.2750873565673828,
+        "10": 0.23652009665966034,
+        "11": 0.1827595978975296
+      },
+      "n": {
+        "0": 925,
+        "1": 1482,
+        "2": 959,
+        "3": 1478,
+        "4": 1029,
+        "5": 299,
+        "6": 882,
+        "7": 1089,
+        "8": 1128,
+        "9": 800,
+        "10": 1244,
+        "11": 1084
+      },
+      "tags": {
+        "0": [
+          "Multiplayer",
+          "Racing",
+          "Sports",
+          "Local Multiplayer"
+        ],
+        "1": [
+          "Puzzle",
+          "Casual",
+          "Relaxing",
+          "Point & Click"
+        ],
+        "2": [
+          "Sexual Content",
+          "Nudity",
+          "Hentai",
+          "Anime"
+        ],
+        "3": [
+          "Action",
+          "Shooter",
+          "FPS",
+          "3D"
+        ],
+        "4": [
+          "Visual Novel",
+          "Story Rich",
+          "Interactive Fiction",
+          "Multiple Endings"
+        ],
+        "5": [
+          "VR",
+          "Indie",
+          "Simulation",
+          "Action"
+        ],
+        "6": [
+          "Bullet Hell",
+          "Action Roguelike",
+          "Action",
+          "Shoot 'Em Up"
+        ],
+        "7": [
+          "Platformer",
+          "2D Platformer",
+          "Action",
+          "2D"
+        ],
+        "8": [
+          "Strategy",
+          "Turn-Based Strategy",
+          "Turn-Based Combat",
+          "Turn-Based Tactics"
+        ],
+        "9": [
+          "Indie",
+          "Casual",
+          "Action",
+          "Adventure"
+        ],
+        "10": [
+          "Horror",
+          "Psychological Horror",
+          "First-Person",
+          "Atmospheric"
+        ],
+        "11": [
+          "Simulation",
+          "Management",
+          "Building",
+          "Resource Management"
+        ]
+      }
+    },
+    "lda": {
+      "jaccard": {
+        "0": 0.21455174684524536,
+        "1": 0.1836610734462738,
+        "2": 0.19264203310012817,
+        "3": 0.21067111194133759,
+        "4": 0.19896407425403595,
+        "5": 0.1854354590177536,
+        "6": 0.1608523726463318,
+        "7": 0.176006019115448,
+        "8": 0.17604567110538483,
+        "9": 0.25757500529289246,
+        "10": 0.20929080247879028,
+        "11": 0.20075561106204987
+      },
+      "n": {
+        "0": 1508,
+        "1": 1424,
+        "2": 549,
+        "3": 514,
+        "4": 1036,
+        "5": 895,
+        "6": 1005,
+        "7": 820,
+        "8": 713,
+        "9": 1067,
+        "10": 1235,
+        "11": 1633
+      },
+      "tags": {
+        "0": [
+          "Horror",
+          "Adventure",
+          "Atmospheric",
+          "First-Person"
+        ],
+        "1": [
+          "Indie",
+          "Action",
+          "Adventure",
+          "Casual"
+        ],
+        "2": [
+          "Sci-fi",
+          "Shooter",
+          "Action",
+          "Space"
+        ],
+        "3": [
+          "Roguelike",
+          "Roguelite",
+          "Action Roguelike",
+          "Procedural Generation"
+        ],
+        "4": [
+          "Story Rich",
+          "Multiple Endings",
+          "Choices Matter",
+          "Visual Novel"
+        ],
+        "5": [
+          "Simulation",
+          "Sandbox",
+          "Management",
+          "Singleplayer"
+        ],
+        "6": [
+          "Multiplayer",
+          "3D",
+          "Funny",
+          "Action"
+        ],
+        "7": [
+          "RPG",
+          "Fantasy",
+          "Adventure",
+          "Action-Adventure"
+        ],
+        "8": [
+          "Strategy",
+          "Tactical",
+          "Turn-Based Strategy",
+          "Singleplayer"
+        ],
+        "9": [
+          "Sexual Content",
+          "Anime",
+          "Nudity",
+          "Singleplayer"
+        ],
+        "10": [
+          "2D",
+          "Pixel Graphics",
+          "Indie",
+          "Retro"
+        ],
+        "11": [
+          "Casual",
+          "Puzzle",
+          "Singleplayer",
+          "Relaxing"
+        ]
+      }
+    }
+  }
+}
