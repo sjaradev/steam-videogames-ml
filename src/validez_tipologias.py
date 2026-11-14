@@ -10,7 +10,7 @@ Responde al feedback de la fase 1:
      TF-IDF con distancia coseno y un modelo de pertenencia mixta (LDA).
 
 Uso:
-    python validez_tipologias.py --csv data/app_dataset_20260907_20260918.csv --out results/validez
+    python src/validez_tipologias.py --csv app_dataset_20260907_20260918.csv --out results/validez
 
 Todo se entrena con el conjunto de entrenamiento y se mide en el de prueba.
 """

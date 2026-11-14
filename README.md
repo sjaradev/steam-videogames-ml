@@ -57,7 +57,7 @@ La salida se guarda en `data/`, `artifacts/` y `results/`. Los archivos `results
 
 ## Validez de los grupos
 
-`src/validez_tipologias.py` compara las tipologías contra una referencia nula y mide su coherencia con el índice de Jaccard en el conjunto de prueba. También prueba TF-IDF con distancia coseno y LDA. Tarda unos 4 minutos y deja sus resultados en `results/validez/`.
+`src/validez_tipologias.py` compara las tipologías contra una referencia nula y mide su coherencia con el índice de Jaccard en el conjunto de prueba. También evalúa K-Means sobre vectores TF-IDF normalizados (L2) y un modelo de pertenencia mixta (LDA). Tarda unos 4 minutos y deja sus resultados en `results/validez/`.
 
 | Agrupación | Jaccard dentro del grupo |
 |---|---|
@@ -78,7 +78,7 @@ Abrir en el navegador:
 - Interfaz básica: http://127.0.0.1:8000/ui
 - Documentación OpenAPI: http://127.0.0.1:8000/docs
 
-La interfaz web contiene exploración de las doce tipologías, lista completa de tags seleccionables, predicción con tags, búsqueda de juegos, opción de ocultar contenido adulto en resultados de búsqueda, mapa PCA estático y monitoreo de consultas. Endpoints disponibles: `GET /health`, `/tags`, `/clusters`, `/profiles`, `/games?query=...`, `/metrics`, `/monitor`, `/map.png`, `/ui` y `POST /predict`.
+La interfaz web contiene exploración de las doce tipologías, lista completa de tags seleccionables, predicción con tags, búsqueda de juegos, opción de ocultar contenido adulto en resultados de búsqueda, mapa PCA estático y monitoreo de consultas (ver capturas en `docs/ui_busqueda.png` y `docs/ui_clasificar.png`). Endpoints disponibles: `GET /health`, `/tags`, `/clusters`, `/profiles`, `/games?query=...`, `/metrics`, `/monitor`, `/map.png`, `/ui` y `POST /predict`.
 
 El monitoreo local registra consultas en SQLite. **No hay autenticación, HTTPS, detección PSI, reentrenamiento protegido ni escalado productivo**; no exponer este prototipo a Internet sin ampliar los controles.
 
@@ -93,20 +93,22 @@ Se comprueba carga del modelo, perfiles y vocabulario, búsqueda, frontend integ
 ## Estructura
 
 ```
-api/main.py                Backend FastAPI
-frontend/index.html        Interfaz integrada accesible por /ui
-frontend/app.py           Frontend Streamlit alternativo sin pruebas en esta ejecución
-src/prepare.py            Filtros, particiones y vocabulario
-src/eda.py                Calidad de datos, outliers y visualizaciones
-src/experiment.py         ML clásico, autoencoders y balanceo del sustituto
-src/evaluate_extra.py     Sensibilidad, estabilidad y SHAP
-src/refine.py             Ensayo adicional k=12 frente a k=15
-src/build_catalog.py      Perfiles y catálogo de consulta
-src/validez_tipologias.py Referencia nula, Jaccard por tipología, TF-IDF + coseno y LDA
-src/figuras_validez.py    Figuras de la validez de los grupos
-tests/test_api.py         Pruebas locales de API
-data/                     CSV indexado y matrices procesadas (original no incluido)
-artifacts/                Modelos y pesos entrenados
-results/                  Métricas, figuras y perfiles
+app_dataset_20260907_20260918.csv Dataset original de Steam (187.115 registros)
+api/main.py                       Backend FastAPI
+frontend/index.html               Interfaz integrada accesible por /ui
+frontend/app.py                   Frontend Streamlit alternativo
+src/prepare.py                    Filtros, particiones y vocabulario
+src/eda.py                        Calidad de datos, outliers y visualizaciones
+src/experiment.py                 ML clásico, autoencoders y balanceo del sustituto
+src/evaluate_extra.py             Sensibilidad, estabilidad y SHAP
+src/refine.py                     Ensayo adicional k=12 frente a k=15
+src/build_catalog.py              Perfiles y catálogo de consulta
+src/validez_tipologias.py         Referencia nula, Jaccard por tipología, TF-IDF y LDA
+src/figuras_validez.py            Figuras de la validez de los grupos
+tests/test_api.py                 Pruebas locales de API
+docs/                             Capturas de la interfaz web
+data/                             Catálogo indexado, vocabulario y matrices procesadas
+artifacts/                        Modelos y pesos entrenados
+results/                          Métricas, figuras (01 a 14), perfiles y validez
 ```
 

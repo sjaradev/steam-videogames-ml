@@ -1,9 +1,8 @@
 """Preparación reproducible a partir del CSV ORIGINAL. Requiere nombres exactos de columnas.
 
-Ejemplo (ajustar al esquema real):
- python -m src.prepare --csv data/steam.csv --tags-column NOMBRE_REAL_TAGS \
-   --reviews-column NOMBRE_REAL_TOTAL_RESENAS --coming-soon-column NOMBRE_REAL_COMING_SOON \
-   --id-column NOMBRE_REAL_ID
+Ejemplo de uso:
+ python -m src.prepare --csv app_dataset_20260907_20260918.csv --tags-column tags \
+   --reviews-column total_reviews --coming-soon-column coming_soon --id-column appid
 """
 import argparse, ast, json
 from pathlib import Path

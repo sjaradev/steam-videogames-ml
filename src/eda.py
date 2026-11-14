@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from src.prepare import parse_tags
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'results'; OUT.mkdir(exist_ok=True); FIG=OUT/'figures';FIG.mkdir(exist_ok=True)
-SOURCE=ROOT/'data'/'steam_original.csv'
+SOURCE=ROOT/'app_dataset_20260907_20260918.csv'
 
 def savefigure(name):
  plt.tight_layout();plt.savefig(FIG/name,dpi=170,bbox_inches='tight');plt.close()

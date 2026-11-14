@@ -1,4 +1,4 @@
-"""API funcional mínima: predicción y registro de consultas, no equivale al sistema completo de rúbrica."""
+"""Backend FastAPI para consulta de catálogo, exploración de tipologías, predicción por tags y monitoreo."""
 from pathlib import Path
 from collections import Counter
 import json,sqlite3,time
@@ -54,7 +54,7 @@ def monitor():
     return {'calls':len(rows),'counts':dict(Counter(str(x[0]) for x in rows)),
         'mean_latency_ms':round(sum(x[1] for x in rows)/len(rows),3) if rows else None}
 
-# Endpoints añadidos después de realizar experimentos verificables.
+# Endpoints de catálogo, perfiles de tipologías, métricas e interfaz web integrada.
 from fastapi.responses import FileResponse, HTMLResponse
 from fastapi import Query
 import pandas as pd
