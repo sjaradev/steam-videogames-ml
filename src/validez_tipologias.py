@@ -240,7 +240,7 @@ def main():
 
     res = pd.DataFrame(rows)
     res.to_csv(out / "validez_modelos.csv", index=False)
-    json.dump({"info": info, "por_grupo": per_group}, open(out / "validez_detalle.json", "w"),
+    json.dump({"info": info, "por_grupo": per_group}, open(out / "validez_detalle.json", "w", encoding="utf-8"),
               ensure_ascii=False, indent=2, default=str)
     te.assign(km_binario=lab_km, km_tfidf=lab_t, lda=lab_l)[["appid", "name", "km_binario", "km_tfidf", "lda"]] \
         .to_csv(out / "asignaciones_test.csv", index=False)
